@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "a3f30cee-dd3a-4bca-8f4d-7249555a69ad",
+		"name": "Factory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Toy Factories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/factories?type=TOY_FACTORY",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"factories"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "TOY_FACTORY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Food Factories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/factories?type=FOOD_FACTORY",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"factories"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "FOOD_FACTORY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daily Production",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/factories/{{factory-id}}/daily-production?startDate=2022-01-15&endDate=2022-01-16",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"factories",
+						"{{factory-id}}",
+						"daily-production"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-15"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daily Production DST Transition 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/factories/{{factory-id}}/daily-production?startDate=2021-03-13&endDate=2021-03-15",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"factories",
+						"{{factory-id}}",
+						"daily-production"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2021-03-13"
+						},
+						{
+							"key": "endDate",
+							"value": "2021-03-15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daily Production DST Transition 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/factories/{{factory-id}}/daily-production?startDate=2021-11-06&endDate=2021-11-08",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"factories",
+						"{{factory-id}}",
+						"daily-production"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2021-11-06"
+						},
+						{
+							"key": "endDate",
+							"value": "2021-11-08"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

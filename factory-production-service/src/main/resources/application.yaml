@@ -1,0 +1,14 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/test_db
+    username: root
+    password: root
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
+        web:
+          filter:
+            CommonsRequestLoggingFilter: DEBUG

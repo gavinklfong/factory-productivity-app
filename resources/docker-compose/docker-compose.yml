@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:14.3
+    container_name: postgres-1
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+      POSTGRES_DB: test_db
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/10-init.sql
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    depends_on:
+      - postgres
+    ports:
+      - "8082:80"
+    environment:
+      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
