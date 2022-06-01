@@ -69,7 +69,7 @@ export function SearchBar() {
                 <Box>
                     <Box justify="center">
                         <Text size="medium" weight="bold">
-                        Wind factory
+                        Food factory
                         </Text>
                     </Box>
                     <Select                    
