@@ -87,7 +87,7 @@ You will see a request collection "factory-production" with a set of API request
 Data model consists of 2 entities - factory and hourly production.
 
 ![Data Model](./resources/diagrams/data_model.png)
-- **factory**
+- **Factory**
   - represent a factory with `id` attribute as the primary key in the format of `uuid` 
   - With `type` attribute, the data model is flexible for different type of factories such as food factories, toy factories, etc
 
