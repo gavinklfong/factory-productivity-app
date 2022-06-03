@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Layer, Button, Heading } from 'grommet';
+import { Box, Text, Layer, Button } from 'grommet';
 import { useDispatch } from 'react-redux';
 import { closeMessageDialog } from './factorySlice';
 
